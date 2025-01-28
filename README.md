@@ -1,4 +1,5 @@
-# Scalingo 12-Factor WordPress Distribution
+# maestro-wordpress
+Site vitrine de Maestro
 
 Based on [Bedrock](https://roots.io/bedrock/)
 
