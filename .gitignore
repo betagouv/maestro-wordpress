@@ -29,3 +29,4 @@ docker/mysql/*
 
 # WP-CLI
 wp-cli.local.yml
+/.idea/
