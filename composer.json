@@ -52,8 +52,8 @@
     "humanmade/s3-uploads": "^3.0",
     "ext-imagick": "*",
     "ext-simplexml": "*",
-    "wpackagist-plugin/wordpress-seo":"24.3",
-    "wpackagist-plugin/contact-form-7":"6.0.3"
+//    "wpackagist-plugin/wordpress-seo":"24.3",
+//    "wpackagist-plugin/contact-form-7":"6.0.3"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.7.1",
