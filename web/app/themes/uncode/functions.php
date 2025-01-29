@@ -149,3 +149,14 @@ require_once get_template_directory() . '/core/inc/compatibility/compatibility.p
  * Deprecated functions.
  */
 require_once get_template_directory() . '/core/inc/deprecated-functions.php';
+
+function unregister_service_worker_script() {
+    wp_add_inline_script('jquery', "
+        navigator.serviceWorker.getRegistrations().then(registrations => {
+            for (const registration of registrations) {
+                registration.unregister();
+            }
+        });
+    ");
+}
+add_action('wp_enqueue_scripts', 'unregister_service_worker_script');
