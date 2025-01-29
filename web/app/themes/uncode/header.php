@@ -131,11 +131,13 @@ if (is_admin_bar_showing()) {
 	<?php echo uncode_remove_p_tag( $background_div ) ; ?>
 	<?php do_action( 'before' );
 
-    navigator.serviceWorker.getRegistrations().then(registrations => {
-        for (const registration of registrations) {
-            registration.unregister();
-        }
-    });
+    <script>
+        navigator.serviceWorker.getRegistrations().then(registrations => {
+            for (const registration of registrations) {
+                registration.unregister();
+            }
+        });
+    </script>
 
 	if ( function_exists( 'wp_body_open' ) ) {
 		wp_body_open();
