@@ -6,6 +6,7 @@ web/app/themes/twentytwentyfour/
 web/app/upgrade
 web/app/uploads/*
 !web/app/uploads/.gitkeep
+!web/app/uploads/2025
 web/app/cache/*
 
 # WordPress
