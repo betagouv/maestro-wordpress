@@ -1,7 +1,3 @@
-php:
-  ini:
-    memory_limit: 256M
 path: web/wp
 server:
   docroot: web
-
