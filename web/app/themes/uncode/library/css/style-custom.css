@@ -374,8 +374,8 @@
 /*----------------------------------------------------------
 #Montserrat
 ----------------------------------------------------------*/
-.font-830159 { font-family: Montserrat !important; }
-.btn-custom-typo.font-830159 { font-family: Montserrat !important; }
+.font-830159 { font-family: "Marianne", Montserrat !important; }
+.btn-custom-typo.font-830159 { font-family: "Marianne", Montserrat !important; }
 
 /*----------------------------------------------------------
 # fontsize-884945
@@ -1047,7 +1047,7 @@ button[type="submit"]:not(.btn-custom-typo):not(.btn-inherit),
 .uncode-accordion:not(.default-typography) .panel-title > a > span,
 .search_footer {
   font-weight: 600 !important;
-  font-family: Montserrat, Montserrat !important;
+  font-family: "Marianne", Montserrat !important;
   letter-spacing: 0em;
   text-transform: initial;
 }
