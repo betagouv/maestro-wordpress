@@ -124,6 +124,21 @@ Config::define('DISALLOW_FILE_MODS', true);
 // Limit the number of post revisions
 Config::define('WP_POST_REVISIONS', env('WP_POST_REVISIONS') ?? true);
 
+// Cache settings for better performance
+if (!defined('WP_CACHE')) {
+    Config::define('WP_CACHE', true);
+}
+Config::define('WP_CACHE_KEY_SALT', env('WP_CACHE_KEY_SALT') ?: get_blog_option(get_current_blog_id(), 'siteurl'));
+
+// Heartbeat API optimization (reduce frequency in frontend)
+Config::define('HEARTBEAT_RECEIVER', 'wp-admin/admin-ajax.php');
+Config::define('HEARTBEAT_SETTING', 'disable');
+
+// Concatenate CSS and JS for better caching
+Config::define('CONCATENATE_SCRIPTS', true);
+Config::define('COMPRESS_CSS', true);
+Config::define('COMPRESS_SCRIPTS', true);
+
 /**
  * Debugging Settings
  */
