@@ -72,11 +72,7 @@
       "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
       "web/app/themes/{$name}/": ["type:wordpress-theme"]
     },
-    "wordpress-install-dir": "web/wp",
-    "paas": {
-      "document-root": "web",
-      "index-document": "index.php"
-    }
+    "wordpress-install-dir": "web/wp"
   },
   "scripts": {
     "test": [
