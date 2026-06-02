@@ -124,14 +124,8 @@ Config::define('DISALLOW_FILE_MODS', true);
 // Limit the number of post revisions
 Config::define('WP_POST_REVISIONS', env('WP_POST_REVISIONS') ?? true);
 
-// Cache settings for better performance
-if (!defined('WP_CACHE')) {
-    Config::define('WP_CACHE', true);
-}
-
-// Concatenate CSS and JS for better caching
-Config::define('COMPRESS_CSS', true);
-Config::define('COMPRESS_SCRIPTS', true);
+// Disable CSS/JS concatenation (nginx handles compression)
+Config::define('CONCATENATE_SCRIPTS', false);
 
 /**
  * Debugging Settings
