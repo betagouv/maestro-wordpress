@@ -1,6 +1,6 @@
 # Application
-#web/app/plugins/*
-#!web/app/plugins/.gitkeep
+web/app/plugins/contact-form-7/
+web/app/plugins/wordpress-seo/
 web/app/mu-plugins/*/
 web/app/themes/twentytwentyfour/
 web/app/upgrade
@@ -31,3 +31,6 @@ docker/mysql/*
 # WP-CLI
 wp-cli.local.yml
 /.idea/
+
+# macOS
+.DS_Store
